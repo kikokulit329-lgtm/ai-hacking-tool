@@ -1,0 +1,38 @@
+# AI Hacking Tool Configuration
+
+# Reconnaissance Settings
+reconnaissance:
+  network_scan_timeout: 2
+  dns_timeout: 5
+  max_threads: 20
+  
+# Vulnerability Assessment Settings
+vulnerability:
+  port_scan_timeout: 1
+  common_ports_only: true
+  web_scan_timeout: 5
+  check_ssl: true
+  
+# AI Engine Settings
+ai_engine:
+  threat_detection_threshold: 0.7
+  anomaly_sensitivity: 2.0
+  model_type: "isolation_forest"
+  
+# Reporting Settings
+reporting:
+  format: "json"  # json, html, pdf, txt
+  include_recommendations: true
+  include_statistics: true
+  
+# Logging Settings
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/aihack.log"
+  max_size: "100MB"
+  backup_count: 5
+  
+# Output Settings
+output:
+  reports_dir: "reports/"
+  cache_dir: ".cache/"
